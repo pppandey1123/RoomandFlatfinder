@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Room and Flat Finder</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="styles/contact.css">
+</head>
+<body>
+  
+  <!-- Navigation bar -->
+  <nav>
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><img src="images/mainlogo.png" class="logo" alt="Room & Flat Finder Logo"></a>
+      <button class="navbar-toggler" type="button" id="navbarToggle" aria-label="Toggle navigation">
+        
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="navbar-vertical">
+        <a class="nav-linkv" href="index.html">Home</a>
+        <a class="nav-linkv" href="rooms.html">Rooms</a>
+        <a class="nav-linkv" href="about.html">About</a>
+        <a class="nav-linkv" id="active"  href="contact.html">Contact</a>
+        <a class="nav-linkv" href="login.html">Login</a>
+      </div>
+      <ul class="navbar-nav" id="navbarNav">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="rooms.html">Rooms</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active"  href="contact.html">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="login.html">Login</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Contact form section -->
+  <main>
+    <h1>Contact Us</h1>
+    <section class="contact-form">
+      <h2>Send us a message</h2>
+      <form id="contactForm">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+      <div id="thankYouMessage" >Thank you for contacting us!</div>
+    </section>
+  </main>
+
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <p>&copy; 2023 Room & Flat Finder. All rights reserved.</p>
+        <div class="social-icons">
+          <a href="https://www.instagram.com/roomandflatfinder/" class="social-icon" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.facebook.com/profile.php?id=61550490536330" class="social-icon" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://twitter.com/FinderRoom1123" class="social-icon" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.linkedin.com/in/room-and-flat-finder-147493288/" class="social-icon" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script/contact.js"></script>
+</body>
+</html>

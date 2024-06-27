@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Room and Flat Finder</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+
+  <!-- Navigation bar -->
+  <nav>
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><img src="images/mainlogo.png" class="logo" alt="Room & Flat Finder Logo"></a>
+      <button class="navbar-toggler" type="button" id="navbarToggle" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="navbar-vertical">
+        <a class="nav-linkv" id="active" href="index.html">Home</a>
+        <a class="nav-linkv" href="rooms.html">Rooms</a>
+        <a class="nav-linkv" href="about.html">About</a>
+        <a class="nav-linkv"  href="contact.html">Contact</a>
+        <a class="nav-linkv" href="login.html">Login</a>
+      </div>
+      <ul class="navbar-nav" id="navbarNav">
+        <li class="nav-item">
+          <a class="nav-link active"  href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="rooms.html">Rooms</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="login.html">Login</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="container">
+      <h1 class="display-4">Find Your Perfect Room or Flat</h1>
+      <p>Search for rooms and flats in your desired location.</p>
+      <form class="search-form">
+        <div class="form-row">
+          <input type="text" id="locationInput" class="form-control" placeholder="Enter a location">
+         
+          <ul id="suggestionsList"></ul>
+        </div>
+        <button class="btn btn-primary" type="submit">Search</button>
+      </form>
+    </div>
+  </header>
+
+  <!-- Featured Rooms Section -->
+  <section class="featured-rooms">
+    <div class="container">
+      <h2>Featured Rooms</h2>
+      <div class="card-list">
+        <div class="card">
+          <img src="images/room1.jpg" class="card-img-top" alt="Room 1">
+          <div class="card-body">
+            <h5 class="card-title">Private Room For Rent</h5>
+            <p class="card-text">Available immediately. 
+              Private bedroom for rent. We are offering a  bedroom in our newly renovated apartment. 
+              The bedroom feature large living space and a spacious wardrobe and huge window.</p>
+            <a href="https://shorturl.at/adfCD" class="btn btn-primary" target="_blank">View Details</a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/room2.jpg" class="card-img-top" alt="Room 2">
+          <div class="card-body">
+            <h5 class="card-title">1 Bedroom Condo Apartment for Lease</h5>
+            <p class="card-text">Bright and Spacious, 569 Sq Ft.1 Bedroom,1 Bathroom, Modern Condo with Unobstructed City Views Built by 
+              Daniels. Open Concept, Large Kitchen W/ Ample Cupboards, & a Breakfast Bar. </p>
+            <a href="https://tinyurl.com/3rvyc5wf" class="btn btn-primary" target="_blank">View Details</a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/room3.jpg" class="card-img-top" alt="Room 3">
+          <div class="card-body">
+            <h5 class="card-title">3 Beds 1 Bath - House</h5>
+            <p class="card-text">Fully renovated 3 bedroom main floor with premium finishes, stainless steel appliances, washer and dryer. Built in garage. Close to Scarborough Town Centre,
+              schools, grocery, TTC.</p>
+            <a href="https://shorturl.at/lqQY5" class="btn btn-primary" target="_blank">View Details</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <p>&copy; 2023 Room & Flat Finder. All rights reserved.</p>
+        <div class="social-icons">
+          <a href="https://www.instagram.com/roomandflatfinder/" class="social-icon" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.facebook.com/profile.php?id=61550490536330" class="social-icon" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://twitter.com/FinderRoom1123" class="social-icon" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.linkedin.com/in/room-and-flat-finder-147493288/" class="social-icon" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="script/script.js" defer></script>
+</body>
+</html>
